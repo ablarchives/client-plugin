@@ -1,0 +1,41 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+fields:
+    _hint:
+        type: partial
+        path: $/albrightlabs/client/models/settings/_hint.htm
+tabs:
+  fields:
+      custom_fields:
+          type: repeater
+          titleFrom: title
+          tab: Custom fields
+          form:
+              fields:
+                  title:
+                      label: Title
+                      type: text
+                      span: auto
+                  slug:
+                      label: Slug
+                      type: text
+                      span: auto
+                      preset:
+                          field: title
+                          type: slug
+                  type:
+                      label: Type
+                      type: dropdown
+                      span: auto
+                      options:
+                          text: Text Input
+                          textarea: Textarea
+                  span:
+                      label: Span
+                      type: dropdown
+                      span: auto
+                      default: auto
+                      options:
+                          auto: Auto
+                          full: Full

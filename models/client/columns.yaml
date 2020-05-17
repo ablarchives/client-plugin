@@ -1,0 +1,26 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+        invisible: true
+    name:
+        label: Name
+        select: concat(name, ' ', surname)
+        searchable: true
+    email:
+        label: Email
+        searchable: font-weight-bold
+        width: 40%
+    company:
+        label: Company
+        searchable: true
+    location:
+        label: Location
+        type: partial
+        path: column_location
+        select: concat(street, city, state, zip)
+        searchable: true

@@ -1,0 +1,23 @@
+# ===================================
+#  Import Export Column Definitions
+# ===================================
+
+columns:
+    name:
+        label: Name
+    surname:
+        label: Surname
+    company:
+        label: Company
+    email:
+        label: Email
+    phone:
+        label: Phone
+    street:
+        label: Street
+    city:
+        label: City
+    state:
+        label: State
+    zip:
+        label: ZIP

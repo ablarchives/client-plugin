@@ -1,0 +1,4 @@
+1.0.1: First version of Clients
+1.0.2:
+  - 'Create the clients table'
+  - create_clients_table.php

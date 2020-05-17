@@ -1,0 +1,13 @@
+# ===================================
+#  Import/Export Behavior Config
+# ===================================
+
+import:
+    title: Import Clients
+    modelClass: AlbrightLabs\Client\Models\Import
+    list: $/albrightlabs/client/models/client/columns_import_export.yaml
+
+export:
+    title: Export Clients
+    modelClass: AlbrightLabs\Client\Models\Export
+    list: $/albrightlabs/client/models/client/columns_import_export.yaml
