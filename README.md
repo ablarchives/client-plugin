@@ -14,8 +14,8 @@ This plugin is used to manage a client list. This plugin isn't much on its own, 
 **Install**
 
 There are two options:
-- `git clone https://github.com/albrightlabs/albright-plugin-client.git plugins/albrightlabs/client` and run `php artisan october:up` or
-- `git submodule add -b master https://github.com/albrightlabs/albright-plugin-client.git plugins/albrightlabs/client` and run `php artisan october:up`
+- `git clone https://github.com/albrightlabs/client-plugin.git plugins/albrightlabs/client` and run `php artisan october:up` or
+- `git submodule add -b master https://github.com/albrightlabs/client-plugin.git plugins/albrightlabs/client` and run `php artisan october:up`
 
 **Update**
 
