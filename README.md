@@ -1,4 +1,4 @@
-## Client Plugin for OctoberCMS
+# Client Plugin for OctoberCMS
 
 **Background**
 
