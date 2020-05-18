@@ -19,6 +19,7 @@ class Clients extends Controller
     public $formConfig = 'config_form.yaml';
     public $listConfig = 'config_list.yaml';
     public $importExportConfig = 'config_import_export.yaml';
+    public $relationConfig;
 
     public function __construct()
     {
