@@ -9,17 +9,20 @@ use Backend\Classes\Controller;
  */
 class Clients extends Controller
 {
+    // use \October\Rain\Extension\ExtensionTrait;
+
     public $implement = [
         'Backend.Behaviors.FormController',
         'Backend.Behaviors.ListController',
         'Backend.Behaviors.ImportExportController',
+        'Backend.Behaviors.RelationController',
     ];
 
 
     public $formConfig = 'config_form.yaml';
     public $listConfig = 'config_list.yaml';
     public $importExportConfig = 'config_import_export.yaml';
-    public $relationConfig;
+    public $relationConfig = 'config_relation.yaml';
 
     public function __construct()
     {

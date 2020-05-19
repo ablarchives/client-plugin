@@ -10,6 +10,8 @@ class Client extends Model
 {
     use \October\Rain\Database\Traits\Validation;
 
+    use \October\Rain\Extension\ExtensionTrait;
+
     /**
      * @var string The database table used by the model.
      */

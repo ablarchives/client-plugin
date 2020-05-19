@@ -21,3 +21,7 @@ columns:
         label: State
     zip:
         label: ZIP
+    updated_at:
+        label: Updated
+    created_at:
+        label: Created
