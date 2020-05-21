@@ -18,8 +18,8 @@ There are two options:
 - `git pull origin master` or
 - `git pull --recursive-submodules`
 
-**Usage**
+**Usage**  
 Install plugin. Select clients from the navigation. Simply add client information.
 
-**Contribute**
+**Contribute**  
 Feel free to fork and contribute to this plugin! Please email support@albrightlabs.com with any and all questions.
