@@ -19,7 +19,7 @@ There are two options:
 - `git pull --recursive-submodules`
 
 **Usage**  
-Install plugin. Select clients from the navigation. Simply add client information.
+Simply install plugin and access via navigation.
 
 **Contribute**  
 Feel free to fork and contribute to this plugin! Please email support@albrightlabs.com with any and all questions.
