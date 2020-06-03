@@ -63,15 +63,17 @@ class Clients extends Controller
     public function formExtendFields($form)
     {
         // Add tax rate field to invoice based on settings
-        foreach(Settings::get('custom_fields') as $customField){
-            $form->addTabFields([
-                'customFields['.$customField["slug"].']' => [
+        if($customfields = Settings::get('custom_fields')){
+            foreach($customfields as $customField){
+                $form->addTabFields([
+                  'customFields['.$customField["slug"].']' => [
                     'label' => $customField['title'],
                     'type'  => $customField['type'],
                     'span'  => $customField['span'],
                     'tab'   => 'Custom fields',
-                ],
-            ]);
+                  ],
+                ]);
+            }
         }
     }
 }

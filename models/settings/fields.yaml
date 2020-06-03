@@ -7,6 +7,16 @@ fields:
         path: $/albrightlabs/client/models/settings/_hint.htm
 tabs:
   fields:
+      referral_locations:
+          type: repeater
+          titleFrom: title
+          tab: Referral locations
+          form:
+              fields:
+                  title:
+                      label: Title
+                      type: text
+                      span: full
       custom_fields:
           type: repeater
           titleFrom: title

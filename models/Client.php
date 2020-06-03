@@ -30,7 +30,13 @@ class Client extends Model
     /**
      * @var array Validation rules for attributes
      */
-    public $rules = [];
+    public $rules = [
+        'name'    => 'between:2,255',
+        'surname' => 'between:2,255',
+        'company' => 'between:2,255',
+        'email'   => 'required|between:6,255',
+        'phone'   => 'between:2,255',
+    ];
 
     /**
      * @var array Attributes to be cast to native types
@@ -91,5 +97,19 @@ class Client extends Model
     public function beforeCreate()
     {
       $this->admin_id = BackendAuth::getUser()->id;
+    }
+
+    /**
+     * Provide dropdown options for referral field
+     */
+    public function getReferralOptions($value, $formData)
+    {
+        $returnArray['none'] = 'None';
+        if($fieldOptions = Settings::get('referral_locations')){
+            foreach($fieldOptions as $fieldOption){
+              $returnArray[strtolower($fieldOption['title'])] = $fieldOption['title'];
+            }
+        }
+        return $returnArray;
     }
 }

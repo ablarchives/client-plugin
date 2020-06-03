@@ -12,6 +12,10 @@ fields:
     company:
         label: Company
         span: auto
+    referral:
+        label: Referral
+        type: dropdown
+        span: auto
 tabs:
     fields:
         email:

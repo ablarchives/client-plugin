@@ -22,6 +22,7 @@ class CreateClientsTable extends Migration
             $table->string('city')->nullable();
             $table->string('state')->nullable();
             $table->string('zip')->nullable();
+            $table->string('referral')->nullable();
             $table->text('customFields')->nullable();
         });
     }
