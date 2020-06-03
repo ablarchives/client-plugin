@@ -5,8 +5,9 @@ This plugin is used to manage a client list. This plugin isn't much on its own, 
 
 **Features**  
 - Create and manage clients
-- Client fields: first name, last name, company name, email, phone, address, image, and custom fields
+- Client fields: first name, last name, company name, email, phone, address, image, referral, and custom fields
 - Custom client fields can be added via plugin settings
+- Referral options can be added via plugin settings
 - Ability to import and export clients
 
 **Install**  
