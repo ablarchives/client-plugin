@@ -1,6 +1,9 @@
 <?php namespace AlbrightLabs\Client\Controllers;
 
+use Backend;
+use Redirect;
 use BackendMenu;
+use AlbrightLabs\Client\Models\Client;
 use AlbrightLabs\Client\Models\Settings;
 use Backend\Classes\Controller;
 
@@ -9,15 +12,12 @@ use Backend\Classes\Controller;
  */
 class Clients extends Controller
 {
-    // use \October\Rain\Extension\ExtensionTrait;
-
     public $implement = [
         'Backend.Behaviors.FormController',
         'Backend.Behaviors.ListController',
         'Backend.Behaviors.ImportExportController',
         'Backend.Behaviors.RelationController',
     ];
-
 
     public $formConfig = 'config_form.yaml';
     public $listConfig = 'config_list.yaml';
@@ -29,6 +29,23 @@ class Clients extends Controller
         parent::__construct();
         $this->bodyClass = 'compact-container';
         BackendMenu::setContext('AlbrightLabs.Client', 'client', 'clients');
+    }
+
+    /**
+     * Redirect after create if needed
+     */
+    public function create_onSave($context = null)
+    {
+        // save as normal
+        parent::create_onSave($context);
+
+        // redirect to intended url
+        $lastClient = Client::orderBy('id', 'desc')->first();
+        if(isset($_GET['redirect'])){
+            return Redirect::to($_GET['redirect'].'/'.$lastClient->id);
+        }else{
+            return Backend::redirect('albrightlabs/client/clients/preview/'.$lastClient->id);
+        }
     }
 
     /**
