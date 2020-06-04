@@ -10,17 +10,14 @@ This plugin is used to manage a client list. This plugin isn't much on its own, 
 - Referral options can be added via plugin settings
 - Ability to import and export clients
 
+**Functionality**
+- Custom fields are supplied to the client model by the clients controller.
+- Referral options are supplied to the client model by itself.
+
 **Install**  
 There are two options:
-- `git clone https://github.com/albrightlabs/client-plugin.git plugins/albrightlabs/client` and run `php artisan october:up` or
-- `git submodule add -b master https://github.com/albrightlabs/client-plugin.git plugins/albrightlabs/client` and run `php artisan october:up`
-
-**Update**  
-- `git pull origin master` or
-- `git pull --recursive-submodules`
-
-**Usage**  
-Simply install plugin and access via navigation.
+1. `git clone https://github.com/albrightlabs/client-plugin.git plugins/albrightlabs/client` and run `php artisan october:up`
+2. `git submodule add -b master https://github.com/albrightlabs/client-plugin.git plugins/albrightlabs/client` and run `php artisan october:up`
 
 **Contribute**  
 Feel free to fork and contribute to this plugin! Please email support@albrightlabs.com with any and all questions.
