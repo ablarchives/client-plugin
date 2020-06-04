@@ -73,7 +73,7 @@ class Plugin extends PluginBase
                 'icon'        => 'icon-user',
                 'iconSvg'     => '/plugins/albrightlabs/client/assets/img/icon.svg',
                 'permissions' => ['albrightlabs.client.*'],
-                'order'       => 400,
+                'order'       => 110,
             ],
         ];
     }
