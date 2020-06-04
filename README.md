@@ -11,8 +11,9 @@ This plugin is used to manage a client list. This plugin isn't much on its own, 
 - Ability to import and export clients
 
 **Functionality**
-- Custom fields are supplied to the client model by the clients controller.
-- Referral options are supplied to the client model by itself.
+- Custom fields are supplied to the client model by the clients controller
+- Referral options are supplied to the client model by itself
+- Include `redirect` parameter in the URL when creating client to redirect to a specific URL (value should be full URL)
 
 **Install**  
 There are two options:
